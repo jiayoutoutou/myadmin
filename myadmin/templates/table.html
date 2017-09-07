@@ -1,0 +1,17 @@
+
+<table border="1">
+    <thead>
+        {% for foo in thead %}
+            <th>{{ foo }}</th>
+        {% endfor %}
+    </thead>
+    <tbody>
+    {% for foo in tbody %}
+        <tr>
+        {% for name in foo %}
+            <td>{{ name }}</td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
